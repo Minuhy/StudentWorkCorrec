@@ -1,0 +1,16 @@
+import win.ui;
+/*DSG{{*/
+mainForm = win.form(text="学生作业管理";right=1199;bottom=599)
+mainForm.add(
+gbWorkPretreatment={cls="groupbox";text="作业预处理";left=25;top=10;right=1024;bottom=171;edge=1;z=1};
+static={cls="static";text="Static";left=1060;top=46;right=1024;bottom=138;transparent=1;z=2}
+)
+/*}}*/
+
+import py3;
+import py3.export.aardio;
+
+var pyMain = py3.import("pyMain");
+
+mainForm.show();
+return win.loopMessage();
